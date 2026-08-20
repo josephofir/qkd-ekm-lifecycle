@@ -1,0 +1,15 @@
+[Unit]
+Description=QKD EKM service (Cloud EKM backend, ETSI-014 key pool)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/qkd-ekm/env
+ExecStart=/opt/qkd-ekm/venv/bin/qkd-ekm-ekm
+WorkingDirectory=/var/lib/qkd-ekm
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

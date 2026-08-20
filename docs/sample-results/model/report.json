@@ -1,0 +1,168 @@
+{
+  "states": 45824,
+  "transitions": 307680,
+  "max_depth": 16,
+  "invariants": [
+    "I1",
+    "I2",
+    "I3",
+    "I4",
+    "I5",
+    "I6",
+    "I7",
+    "I8",
+    "I9"
+  ],
+  "guards": [
+    "G1",
+    "G2",
+    "G3",
+    "G4"
+  ],
+  "violations": [],
+  "states_by_mode": {
+    "BINDING_HOLDOVER": 6772,
+    "BUFFERED": 3166,
+    "EXHAUSTED": 237,
+    "READY": 5728,
+    "RECOVERY": 22912,
+    "SUSPENDED": 7009
+  },
+  "rules": {
+    "reject_stale_needs_active": true,
+    "ingest_needs_ekm": false,
+    "expire_needs_source_down": false,
+    "alloc_ekm_needs_source": false,
+    "restore_sets_recovery": true,
+    "restore_recovery_needs_full": false,
+    "authority_only_when_degraded": false,
+    "alloc_vpn_needs_no_active": false,
+    "vpn_pending_replaceable": false,
+    "recover_clears_pending": false,
+    "recover_needs_authority": false,
+    "dep_toggles_unconditional": false,
+    "activate_merged": false,
+    "ekm_down_clears_active": false,
+    "expire_marks_used": false,
+    "suspend_state": false,
+    "restoration_detected": false,
+    "abandon_pending": false,
+    "abandon_consumes_epoch": false,
+    "down_clears_pending": false,
+    "session_end": false,
+    "recover_clears_active": false,
+    "fifo_pool": false,
+    "alloc_vpn_any_future_epoch": true,
+    "reject_stale_per_epoch": true
+  },
+  "seeded": {
+    "cases": 13,
+    "undetected": 0,
+    "rows": [
+      {
+        "name": "duplicate_pool_entry",
+        "kind": "state",
+        "expected_check": "I1",
+        "detected_by": [
+          "I1"
+        ]
+      },
+      {
+        "name": "identifier_in_two_bindings",
+        "kind": "state",
+        "expected_check": "I2",
+        "detected_by": [
+          "I2"
+        ]
+      },
+      {
+        "name": "consumed_identifier_back_in_pool",
+        "kind": "state",
+        "expected_check": "I3",
+        "detected_by": [
+          "I3"
+        ]
+      },
+      {
+        "name": "two_identifiers_same_purpose_object",
+        "kind": "state",
+        "expected_check": "I4",
+        "detected_by": [
+          "I4"
+        ]
+      },
+      {
+        "name": "active_version_without_binding",
+        "kind": "state",
+        "expected_check": "I5",
+        "detected_by": [
+          "I5"
+        ]
+      },
+      {
+        "name": "pending_activation_with_replayed_epoch",
+        "kind": "state",
+        "expected_check": "I6",
+        "detected_by": [
+          "I6"
+        ]
+      },
+      {
+        "name": "active_vpn_epoch_conflicts_with_authoritative_epoch",
+        "kind": "state",
+        "expected_check": "I7",
+        "detected_by": [
+          "I7"
+        ]
+      },
+      {
+        "name": "stored_mode_conflicts_with_derived_mode",
+        "kind": "state",
+        "expected_check": "I8",
+        "detected_by": [
+          "I8"
+        ]
+      },
+      {
+        "name": "stored_consequences_conflict_with_dependencies",
+        "kind": "state",
+        "expected_check": "I9",
+        "detected_by": [
+          "I9"
+        ]
+      },
+      {
+        "name": "ingest_while_source_unavailable",
+        "kind": "transition",
+        "expected_check": "G1",
+        "detected_by": [
+          "G1"
+        ]
+      },
+      {
+        "name": "alloc_ekm_while_ekm_unreachable",
+        "kind": "transition",
+        "expected_check": "G2",
+        "detected_by": [
+          "G2"
+        ]
+      },
+      {
+        "name": "reject_stale_changes_authoritative_state",
+        "kind": "transition",
+        "expected_check": "G3",
+        "detected_by": [
+          "G3"
+        ]
+      },
+      {
+        "name": "recover_without_restored_dependencies",
+        "kind": "transition",
+        "expected_check": "G4",
+        "detected_by": [
+          "G4"
+        ]
+      }
+    ]
+  }
+}

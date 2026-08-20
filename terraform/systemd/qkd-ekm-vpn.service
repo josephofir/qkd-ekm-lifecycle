@@ -1,0 +1,17 @@
+[Unit]
+Description=QKD-keyed WireGuard VPN control service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/qkd-ekm/env
+ExecStart=/opt/qkd-ekm/venv/bin/qkd-ekm-vpn
+WorkingDirectory=/var/lib/qkd-ekm
+Restart=always
+RestartSec=5
+# `wg set` and `ip link` need CAP_NET_ADMIN, so this unit runs as root.
+User=root
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,15 @@
+VPNClient: Client Started
+VPNClient: User is trying to connect to the vpn server
+VPNClient: Creating local vpn interface
+VPNClient: Generating public-private key pair
+VPNClient: WG Interface file created
+VPNClient: Initiating connection to VPN Server
+VPNServer: Client <CLIENT> initiated VPN connection
+VPNServer: Using existing vpn interface
+VPNServer: Fetching new key for client QKD: <PEER_B>
+EKM: Got new key request for instance <PEER_B>
+EKM: Retrieving 1 keys between <PEER_A> and <PEER_B> from pool
+VPNServer: Got new key with keyId: <KEY_ID>
+VPNServer: Returning response to client with Interface details
+VPNClient: Fetching Key from QKD with keyId: <KEY_ID>
+VPNClient: Configuring the Wireguard VPN Interface

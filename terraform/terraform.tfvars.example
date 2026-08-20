@@ -1,0 +1,45 @@
+# Copy to terraform.tfvars and edit. terraform.tfvars is gitignored.
+
+project_id      = "qkd-ekm-lifecycle-demo"
+operator_emails = ["you@example.com"]
+
+# Region/zone must support Cloud EKM via VPC. me-west1 is the paper's region;
+# document the substitution in COMPARISON.md if you have to move.
+region = "me-west1"
+zone   = "me-west1-a"
+
+machine_type = "e2-small"
+dist_tarball = "../dist/qkd-ekm-lifecycle.tar.gz"
+
+# "sim" deploys the ETSI-014 simulator VM (default, what reviewers use).
+# "heqa" points the EKM and the client at the real Sceptre pair; fill in the four
+# qkd_* variables below and the simulator VM is left unused.
+qkd_backend = "sim"
+
+# qkd1_url   = "https://qkd1.lab.example:443"
+# qkd2_url   = "https://qkd2.lab.example:443"
+# qkd_ca_pem = <<-EOT
+#   -----BEGIN CERTIFICATE-----
+#   ...
+#   -----END CERTIFICATE-----
+# EOT
+# qkd_token  = "..."
+
+rotation_minutes             = 15
+vpn_refresh_seconds          = 3600
+vpn_activation_delay_seconds = 30
+
+# WireGuard tunnel network (also the source range of the workload firewall rule and of the
+# NAT rule on vpn-vm). Must not overlap 10.10.0.0/24 (qkd-vpc) or 10.30.0.0/24 (client-vpc).
+vpn_tunnel_cidr = "10.20.0.0/24"
+
+# EKM key pool: how many QKD keys to keep per peer, and how long a pooled key lives.
+ekm_pool_target = 50
+ekm_pool_ttl    = 600
+
+# Accepted "aud" values in the Cloud KMS OIDC token, comma separated. Cloud EKM sends
+# https://<ekm hostname>; the default matches the hostname Terraform configures. If the EKM
+# log (/var/log/qkd-ekm/ekm.log) shows `JWT rejected: audience not allowed aud=...`, set
+# that value here. Empty disables the audience check (signature, issuer and the
+# gcp-sa-ekms e-mail are still enforced).
+ekm_jwt_audiences = "https://ekm.qkd.internal"

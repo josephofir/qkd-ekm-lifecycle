@@ -1,0 +1,104 @@
+{
+  "sequence": [
+    "READY",
+    "BUFFERED",
+    "BINDING_HOLDOVER",
+    "SUSPENDED",
+    "RECOVERY",
+    "READY"
+  ],
+  "keys_drained": 49,
+  "observations": {
+    "ready": {
+      "mode": "READY",
+      "storage": true,
+      "fresh_allocation": true,
+      "established_vpn": "distinct",
+      "pool": {
+        "QKD2": 50
+      },
+      "bindings_count": 4,
+      "source_available": true,
+      "continuity_authority": true,
+      "recovery_pending": false
+    },
+    "source_down_buffered": {
+      "mode": "BUFFERED",
+      "storage": true,
+      "fresh_allocation": true,
+      "established_vpn": "distinct",
+      "pool": {
+        "QKD2": 49
+      },
+      "bindings_count": 5,
+      "source_available": false,
+      "continuity_authority": true,
+      "recovery_pending": false
+    },
+    "pool_empty_binding_holdover": {
+      "mode": "BINDING_HOLDOVER",
+      "storage": true,
+      "fresh_allocation": false,
+      "established_vpn": "distinct",
+      "pool": {
+        "QKD2": 0
+      },
+      "bindings_count": 54,
+      "source_available": false,
+      "continuity_authority": true,
+      "recovery_pending": false
+    },
+    "authority_withdrawn_suspended": {
+      "mode": "SUSPENDED",
+      "storage": true,
+      "fresh_allocation": false,
+      "established_vpn": "distinct",
+      "pool": {
+        "QKD2": 0
+      },
+      "bindings_count": 54,
+      "source_available": false,
+      "continuity_authority": false,
+      "recovery_pending": false
+    },
+    "source_restored": {
+      "mode": "RECOVERY",
+      "storage": true,
+      "fresh_allocation": false,
+      "established_vpn": "distinct",
+      "pool": {
+        "QKD2": 50
+      },
+      "bindings_count": 54,
+      "source_available": true,
+      "continuity_authority": true,
+      "recovery_pending": true
+    },
+    "recovery_pending": {
+      "mode": "RECOVERY",
+      "storage": true,
+      "fresh_allocation": false,
+      "established_vpn": "distinct",
+      "pool": {
+        "QKD2": 50
+      },
+      "bindings_count": 54,
+      "source_available": true,
+      "continuity_authority": true,
+      "recovery_pending": true
+    },
+    "after_recovery_ack": {
+      "mode": "READY",
+      "storage": true,
+      "fresh_allocation": true,
+      "established_vpn": "distinct",
+      "pool": {
+        "QKD2": 50
+      },
+      "bindings_count": 54,
+      "source_available": true,
+      "continuity_authority": true,
+      "recovery_pending": false
+    }
+  }
+}

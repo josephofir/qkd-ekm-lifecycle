@@ -1,0 +1,303 @@
+[
+  {
+    "name": "model.states",
+    "expected": "45824",
+    "actual": "45824",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "model.transitions",
+    "expected": "307680",
+    "actual": "307680",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "model.max_depth",
+    "expected": "16",
+    "actual": "16",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "model.invariants",
+    "expected": "9",
+    "actual": "9",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "model.guards",
+    "expected": "4",
+    "actual": "4",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "model.seeded_states_detected",
+    "expected": "9",
+    "actual": "9",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "model.seeded_transitions_detected",
+    "expected": "4",
+    "actual": "4",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "table9[1].demand",
+    "expected": "0.001389",
+    "actual": "0.00138889",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "table9[1].headroom",
+    "expected": "59681.2",
+    "actual": "59681.2",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "table9[1].endurance_h",
+    "expected": "655194",
+    "actual": "655194",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "table9[1].refill_min",
+    "expected": "0.001",
+    "actual": "0.00100536",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "table9[1000].demand",
+    "expected": "1.38889",
+    "actual": "1.38889",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "table9[1000].headroom",
+    "expected": "59.681",
+    "actual": "59.6812",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "table9[1000].endurance_h",
+    "expected": "655.194",
+    "actual": "655.194",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "table9[1000].refill_min",
+    "expected": "1.022",
+    "actual": "1.02247",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "table9[10000].demand",
+    "expected": "13.8889",
+    "actual": "13.8889",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "table9[10000].headroom",
+    "expected": "5.968",
+    "actual": "5.96812",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "table9[10000].endurance_h",
+    "expected": "65.519",
+    "actual": "65.5194",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "table9[10000].refill_min",
+    "expected": "12.078",
+    "actual": "12.077",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "table9[50000].demand",
+    "expected": "69.4444",
+    "actual": "69.4444",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "table9[50000].headroom",
+    "expected": "1.194",
+    "actual": "1.19362",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "table9[50000].endurance_h",
+    "expected": "13.104",
+    "actual": "13.1039",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "table9[50000].refill_min",
+    "expected": "309.88",
+    "actual": "309.877",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "table9[60000].demand",
+    "expected": "83.3333",
+    "actual": "83.3333",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "table9[60000].headroom",
+    "expected": "0.995",
+    "actual": "0.994687",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "table9[60000].endurance_h",
+    "expected": "10.92",
+    "actual": "10.9199",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "table9[60000].refill_min",
+    "expected": "null",
+    "actual": "null",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "scalars.D",
+    "expected": "0.00138889",
+    "actual": "0.00138889",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "scalars.mQ",
+    "expected": "59681.2",
+    "actual": "59681.2",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "scalars.reserve_24h_1000_pct",
+    "expected": "96.3",
+    "actual": "96.337",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "scalars.reserve_24h_10000_pct",
+    "expected": "63.4",
+    "actual": "63.3696",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "scalars.depletion_50000_h",
+    "expected": "13.1",
+    "actual": "13.1039",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "scalars.refill_1h_1000_min",
+    "expected": "1.02",
+    "actual": "1.02247",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "scalars.refill_1h_10000_min",
+    "expected": "12.1",
+    "actual": "12.077",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "scalars.refill_1h_50000_h",
+    "expected": "5.16",
+    "actual": "5.16462",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "s1.VPNClient",
+    "expected": "8 events in order",
+    "actual": "8 of 8 matched",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "s1.VPNServer",
+    "expected": "5 events in order",
+    "actual": "5 of 5 matched",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "s1.EKM",
+    "expected": "2 events in order",
+    "actual": "2 of 2 matched",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "s1.sequence",
+    "expected": "15 events in order",
+    "actual": "15 of 15 matched",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "s2.EKM",
+    "expected": "3 events in order",
+    "actual": "3 of 3 matched",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "s2.FileUploadServer",
+    "expected": "5 events in order",
+    "actual": "5 of 5 matched",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "s2.VPNClient",
+    "expected": "4 events in order",
+    "actual": "4 of 4 matched",
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "name": "s2.sequence",
+    "expected": "12 events in order",
+    "actual": "12 of 12 matched",
+    "result": "PASS",
+    "note": ""
+  }
+]

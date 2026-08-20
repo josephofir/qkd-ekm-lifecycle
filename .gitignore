@@ -1,0 +1,11 @@
+.venv/
+results/
+dist/
+*.sqlite
+*.pem
+*.key
+terraform/.terraform/
+terraform/*.tfstate*
+terraform/terraform.tfvars
+__pycache__/
+terraform/tfplan

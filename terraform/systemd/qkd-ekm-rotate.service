@@ -1,0 +1,10 @@
+[Unit]
+Description=QKD EKM key rotation (create the next CryptoKeyVersion and make it primary)
+After=qkd-ekm-ekm.service
+Requires=qkd-ekm-ekm.service
+
+[Service]
+Type=oneshot
+EnvironmentFile=/etc/qkd-ekm/env
+ExecStart=/opt/qkd-ekm/venv/bin/qkd-ekm-rotate
+WorkingDirectory=/var/lib/qkd-ekm

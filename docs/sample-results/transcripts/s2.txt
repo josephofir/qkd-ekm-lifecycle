@@ -1,0 +1,29 @@
+2026-08-19 21:04:40.072 EKM: Got Key Wrap request with KEKId: <KEK_ID>
+2026-08-19 21:04:40.079 EKM: Bound external key v4 to QKD key <KEY_ID>
+2026-08-19 21:04:40.134 EKM: Rotated external key to version v4
+2026-08-19 21:04:40.412 QKDSim: Issued 1 key(s) for <PEER_A>-><PEER_B>
+2026-08-19 21:04:40.418 EKM: Pulled 1 keys for peer <PEER_B>
+2026-08-19 21:04:51.289 VPNClient: Getting key for file encryption shared with <PEER_A>
+2026-08-19 21:04:51.405 FileUploadServer: received key with Id <KEY_ID> for qkds: <PEER_B><--><PEER_A>
+2026-08-19 21:04:51.426 FileUploadServer: retrieving key with id: <KEY_ID>
+2026-08-19 21:04:51.426 FileUploadServer: uploading file to gs://<BUCKET>/<OBJECT_ID>_sensitive.txt
+2026-08-19 21:04:51.426 FileUploadServer: using encryption key: <EKM_KEY_NAME>
+2026-08-19 21:04:51.432 EKM: Got new key request for instance <PEER_B>
+2026-08-19 21:04:51.432 EKM: Retrieving 1 keys between <PEER_A> and <PEER_B> from pool
+2026-08-19 21:04:51.437 VPNClient: Encrypting the file with key: <KEY_ID>
+2026-08-19 21:04:51.439 VPNClient: Uploading file sensitive.txt
+2026-08-19 21:04:51.712 EKM: Got Key Unwrap request with KEKId: <KEK_ID>
+2026-08-19 21:04:51.829 EKM: Got Key Unwrap request with KEKId: <KEK_ID>
+2026-08-19 21:04:51.942 EKM: Got Key Unwrap request with KEKId: <KEK_ID>
+2026-08-19 21:04:52.056 EKM: Got Key Unwrap request with KEKId: <KEK_ID>
+2026-08-19 21:04:52.168 EKM: Got Key Unwrap request with KEKId: <KEK_ID>
+2026-08-19 21:04:52.275 EKM: Got Key Wrap request with KEKId: <KEK_ID>
+2026-08-19 21:04:52.312 FileUploadServer: file uploaded successfully
+2026-08-19 21:04:52.330 VPNClient: File sensitive.txt uploaded successfully
+2026-08-19 21:04:52.400 EKM: Got Key Unwrap request with KEKId: <KEK_ID>
+2026-08-19 21:04:52.508 EKM: Got Key Unwrap request with KEKId: <KEK_ID>
+2026-08-19 21:04:52.511 QKDSim: Issued 1 key(s) for <PEER_A>-><PEER_B>
+2026-08-19 21:04:52.517 EKM: Pulled 1 keys for peer <PEER_B>
+2026-08-19 21:04:52.643 EKM: Got Key Unwrap request with KEKId: <KEK_ID>
+2026-08-19 21:04:52.781 EKM: Got Key Unwrap request with KEKId: <KEK_ID>
+2026-08-19 21:04:52.916 EKM: Got Key Unwrap request with KEKId: <KEK_ID>

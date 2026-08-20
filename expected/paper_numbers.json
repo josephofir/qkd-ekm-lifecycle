@@ -1,0 +1,29 @@
+{
+  "states": 45824,
+  "transitions": 307680,
+  "max_depth": 16,
+  "invariants": 9,
+  "guards": 4,
+  "seeded_states": 9,
+  "seeded_transitions": 4,
+  "demand_units_per_s": 0.001388889,
+  "source_rate_units_per_s": 82.890625,
+  "inventory_units": 3275971,
+  "ceiling_pairs": 59681.25,
+  "table9": [
+    {"pairs": 1, "demand": 0.001389, "headroom": 59681.25, "endurance_h": 655194.2, "refill_min": 0.001},
+    {"pairs": 1000, "demand": 1.388889, "headroom": 59.681, "endurance_h": 655.194, "refill_min": 1.022},
+    {"pairs": 10000, "demand": 13.888889, "headroom": 5.968, "endurance_h": 65.519, "refill_min": 12.078},
+    {"pairs": 50000, "demand": 69.444444, "headroom": 1.194, "endurance_h": 13.104, "refill_min": 309.88},
+    {"pairs": 60000, "demand": 83.333333, "headroom": 0.995, "endurance_h": 10.920, "refill_min": null}
+  ],
+  "reserve_24h_1000_pct": 96.3,
+  "reserve_24h_10000_pct": 63.4,
+  "depletion_50000_h": 13.1,
+  "refill_1h_1000_min": 1.02,
+  "refill_1h_10000_min": 12.1,
+  "refill_1h_50000_h": 5.16,
+  "source_label_secure_key_rate": "Secure Key Rate (256bps)",
+  "secure_bit_rate": 21220,
+  "secure_key_rate_256": 82
+}

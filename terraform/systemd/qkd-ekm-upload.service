@@ -1,0 +1,15 @@
+[Unit]
+Description=QKD EKM file upload service (writes to the CMEK bucket)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/qkd-ekm/env
+ExecStart=/opt/qkd-ekm/venv/bin/qkd-ekm-upload
+WorkingDirectory=/var/lib/qkd-ekm
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

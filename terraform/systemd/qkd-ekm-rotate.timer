@@ -1,0 +1,12 @@
+[Unit]
+Description=Periodic QKD EKM key rotation
+
+# The interval is overridden at boot by /etc/systemd/system/qkd-ekm-rotate.timer.d/override.conf,
+# generated from the Terraform variable rotation_minutes.
+[Timer]
+OnBootSec=15min
+OnUnitActiveSec=15min
+Unit=qkd-ekm-rotate.service
+
+[Install]
+WantedBy=timers.target

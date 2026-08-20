@@ -1,0 +1,35 @@
+{
+  "secure_bit_rate": 21220.0,
+  "secure_key_rate_256": 82.890625,
+  "signal_qber": 0.8,
+  "weak_decoy_qber": 1.0,
+  "signal_qber_per_state": [
+    0.19,
+    1.04,
+    1.45,
+    0.27,
+    0.83,
+    0.69
+  ],
+  "weak_decoy_qber_per_state": [
+    0.48,
+    1.53,
+    1.65,
+    0.69,
+    1.2,
+    0.48
+  ],
+  "available_secured_bits": 4741369,
+  "available_256bit_keys": 3275917,
+  "consumed_keys": 54,
+  "consumed_bits": 13824,
+  "key_requests": 5,
+  "failed_key_requests": 0,
+  "max_key_length": 8192,
+  "generated_bits": 4742137,
+  "deleted_bits": 768,
+  "derived_256bit_rate": 82.890625,
+  "captured_at": "2026-08-19T20:58:33.129690+00:00",
+  "backend": "sim",
+  "source_label_secure_key_rate": "Secure Key Rate (256bps)"
+}

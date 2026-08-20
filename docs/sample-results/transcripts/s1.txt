@@ -1,0 +1,26 @@
+2026-08-19 20:56:15.569 VPNClient: Client Started
+2026-08-19 20:56:15.569 VPNClient: User is trying to connect to the vpn server
+2026-08-19 20:56:15.569 VPNClient: Creating local vpn interface
+2026-08-19 20:56:15.569 VPNClient: Generating public-private key pair
+2026-08-19 20:56:15.573 VPNClient: WG Interface file created
+2026-08-19 20:56:15.573 VPNClient: Initiating connection to VPN Server
+2026-08-19 20:56:16.031 VPNServer: Client <CLIENT> initiated VPN connection
+2026-08-19 20:56:16.031 VPNServer: Using existing vpn interface
+2026-08-19 20:56:16.031 VPNServer: Fetching new key for client QKD: <PEER_B>
+2026-08-19 20:56:16.049 EKM: Got new key request for instance <PEER_B>
+2026-08-19 20:56:16.049 EKM: Retrieving 1 keys between <PEER_A> and <PEER_B> from pool
+2026-08-19 20:56:16.052 VPNClient: Fetching Key from QKD with keyId: <KEY_ID>
+2026-08-19 20:56:16.053 VPNServer: Got new key with keyId: <KEY_ID>
+2026-08-19 20:56:16.056 VPNServer: Returning response to client with Interface details
+2026-08-19 20:56:16.063 VPNClient: Configuring the Wireguard VPN Interface
+2026-08-19 20:56:16.199 VPNClient: Connected
+2026-08-19 20:56:17.088 QKDSim: Issued 1 key(s) for <PEER_A>-><PEER_B>
+2026-08-19 20:56:17.092 EKM: Pulled 1 keys for peer <PEER_B>
+2026-08-19 20:56:28.672 VPNClient: Refreshing PSK with keyId: <KEY_ID> effective at 2026-08-19T20:56:58.679320+00:00
+2026-08-19 20:56:28.675 EKM: Got new key request for instance <PEER_B>
+2026-08-19 20:56:28.675 EKM: Retrieving 1 keys between <PEER_A> and <PEER_B> from pool
+2026-08-19 20:56:28.679 VPNServer: Scheduled PSK refresh for <CLIENT> with keyId: <KEY_ID> at 2026-08-19T20:56:58.679320+00:00
+2026-08-19 20:56:29.103 QKDSim: Issued 1 key(s) for <PEER_A>-><PEER_B>
+2026-08-19 20:56:29.108 EKM: Pulled 1 keys for peer <PEER_B>
+2026-08-19 20:56:58.681 VPNClient: PSK refreshed
+2026-08-19 20:56:58.684 VPNServer: Activated PSK <KEY_ID>

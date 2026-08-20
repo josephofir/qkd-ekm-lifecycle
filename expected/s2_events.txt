@@ -1,0 +1,12 @@
+EKM: Got new key request for instance <PEER_B>
+EKM: Retrieving 1 keys between <PEER_A> and <PEER_B> from pool
+FileUploadServer: received key with Id <KEY_ID> for qkds: <PEER_B><--><PEER_A>
+VPNClient: Getting key for file encryption shared with <PEER_A>
+VPNClient: Encrypting the file with key: <KEY_ID>
+VPNClient: Uploading file sensitive.txt
+FileUploadServer: retrieving key with id: <KEY_ID>
+FileUploadServer: uploading file to gs://<BUCKET>/<OBJECT_ID>_sensitive.txt
+FileUploadServer: using encryption key: <EKM_KEY_NAME>
+EKM: Got Key Wrap request with KEKId: <KEK_ID>
+FileUploadServer: file uploaded successfully
+VPNClient: File sensitive.txt uploaded successfully
